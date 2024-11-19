@@ -1,0 +1,348 @@
+@font-face {
+	font-family: 'Archivo';
+	src: url(fonts/Archivo/Archivo-VariableFont_wdth,wght.ttf) format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Narnoor';
+	src: url(fonts/Narnoor/Narnoor-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	--primary: #d63031;
+	--secondary: #2d3436;
+	--background: ghostwhite;
+	--font-sans-serif: 'Archivo', 'Arial', 'Helvetica', 'Verdana', 'Tahoma',
+    'Trebuchet Ms', 'Gill Sans', 'Calibri', 'Futura', 'Century Gothic', 'Open Sans', 'Roboto', sans-serif;
+    --font-serif: 'Narnoor', 'Georgia', 'Times New Roman', 'Garamond', 'Baskerville', 'Palatino', 'Cambria', serif;
+    --font-bold: 'Archivo';
+    background: var(--background);
+    --border-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+div.header {
+	position: relative;
+	top: 0;
+	display: flex;
+	padding: 8px;
+	font-family: var(--font-serif);
+	background: #4b4b4b; 
+	height: 1.5rem;
+	color: var(--background);
+}
+
+header.main-header {
+	background: var(--primary);
+	color: var(--background);
+	border-bottom: 2px solid var(--secondary);
+	height: 3rem;
+	position: sticky;
+	top: 0;
+}
+
+span.main-title {
+	font-weight: bold;
+	font-size: 1.75rem;
+	display: inline-block;
+	padding: 8px;
+}
+
+span {
+	font-family:  var(--font-sans-serif);
+}
+
+span.footer-title {
+	margin-top: 1rem;
+}
+
+span.footer-title, span.footer-address, div.phone-number, div.email {	
+	display: block;
+	text-align: center;
+	font-size: 0.7rem;
+	font-family: var(--font-sans-serif;)
+}
+
+div.phone-number {
+	display: inline;
+	font-family: var(--font-sans-serif);
+}
+
+div.mail-header {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+div.phone-header {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+div.email {
+	display: inline;
+	font-family: var(--font-sans-serif);
+}
+
+
+h2 {
+	font-family: var(--font-sans-serif);
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-family: var(--font-sans-serif);
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 16px;
+}
+
+p {
+	font-family: var(--font-serif);
+	text-align: center;
+	max-width: 85vh;
+	margin: 0.6rem auto;
+	width: 24rem;
+}
+
+.menu-icon {
+	cursor: pointer;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	z-index: 1001;
+}
+
+nav {
+  background: #3d3d3d;
+  height: 100vh;
+  width: 18.75rem;
+  position: fixed;
+  right: -300px;
+  top: 0;
+  z-index: 1000;
+  transition: right 0.3s ease;
+}
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 2rem;
+    
+}
+   nav ul li {
+      margin-bottom: 1rem;
+}
+      nav ul li a {
+      	position: sticky;
+        color: var(--background);
+        text-decoration: none;
+        font-family: var(--font-serif);
+}
+
+nav ul li a:hover {
+	color: var(--primary);
+	transition: color 0.3s ease;
+}
+
+.nav-toggle:checked ~ nav {
+  right: 0;
+}
+
+img {	
+
+	border: 2px solid #2d3436 !important;
+	border-radius:  5px;
+	display: block;
+	margin: 8px auto;
+}
+
+img.Hero-Photo, img.review-photo-1, img.review-photo-2, img.vinyl-photo, 
+img.aluminum-photo, img.chainlink-photo, img.wood-photo, img.grey-fence {
+	max-width: 85vh;
+	width: 24rem;
+	max-height: 16rem;
+	height: 13rem;
+}
+
+img.family-photo {
+	max-width: 85vh;
+	width: 24rem;
+	max-height: 16rem;
+	height: 14rem;
+}
+
+img.story-photo {
+	max-width: 85vh;
+	width: 24rem;
+	max-height: 16rem;
+	height: 13rem;
+	margin-top: 1rem;
+}
+
+button.Quote {
+	background: black;
+	color: var(--background);
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 1rem;
+	padding: 5px 15px;
+	display: flex;
+	margin-left: 8.5rem;
+	margin-bottom: 1rem;
+	margin-top: 0;
+	font-family: var(--font-sans-serif);
+	height: 40px;
+	line-height: 32px;
+}
+
+button.Quote:hover {
+	background: #1e272e;
+}
+
+main {
+	flex: 1;
+}
+
+footer.main-footer {
+	background: var(--primary);
+	color: var(--background);
+	border-top: 2px solid var(--secondary);
+	margin-top: 2rem;
+	flex: 1;
+	height: 10rem;
+	z-index: 900;
+}
+
+h2 ~ p {
+	margin-top: 0.4rem;
+}
+
+#phone {
+	margin-top: -1rem !important;
+	margin-left: 10rem;
+	font-size: 12px;
+	margin-right: 5px;
+}
+
+#mail-footer {
+	margin-top: 1.2rem;
+	margin-left: 7.5rem;
+	font-size: 12px;
+	margin-right: 5px;
+}
+
+#envelope-header {
+	position: relative;
+	top: 4px;
+}
+
+#phone-header {
+	position: relative;
+	top: 4px;
+}
+
+.text-carousel {
+    width: 100%; /* Adjust as needed */
+    height: 100px; /* Adjust to fit text size */
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: 1rem;
+}
+
+.slides {
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    animation: slide 15s infinite;
+}
+
+.slide {
+	text-align: center;
+    height: 100px; /* Match the carousel height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    font-family: var(--font-sans-serif);
+}
+
+@keyframes slide {
+    0%, 33% {
+        transform: translateY(0); /* First message */
+    }
+    34%, 66% {
+        transform: translateY(-100px); /* Second message */
+    }
+    67%, 100% {
+        transform: translateY(-200px); /* Third message */
+    }
+}
+
+div.FAQs {
+	font-family: var(--font-serif);
+	text-align: center;
+}
+
+div.reviews {
+	margin:  0 auto;
+	display: block;
+	height: 52rem;
+	width: 25rem;
+	border-radius: 10px;
+}
+
+div#reviews {
+	font-family: var(--font-sans-serif);
+	text-align: center;
+	display: block;
+	font-size: 20px;
+}
+
+ul.locations {
+	display: block;
+	text-align: center;
+	font-family: var(--font-serif);
+	margin: 0;
+	padding: 0;
+}
+
+ul.locations li {
+	display: block;
+	text-align: center;
+	margin:  0 0;
+}
+
+div.fencing-options {
+	display: block;
+	text-align: center;
+}
+
+div.fencing-options p {
+	margin-top: 0;
+}
+
+#location-pin {
+	display: inline-block !important;
+	margin-left: 3rem !important;
+	font-size: 3rem;
+	margin-top: 2rem;
+}
