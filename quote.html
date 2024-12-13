@@ -29,34 +29,27 @@
 			<li><a href="About-Us.html">About Us</a></li>
 			<li><a href="Contact-Us.html">Contact Us</a></li>
 			<li><a href="fencing-options.html">Fencing Options</a></li>
-			<li><a href="quote.html">Request a Quote</a></li>
+			<li><a href="quote.hmtl">Request a Quote</a></li>
 		</ul>
 	</nav>
 	</header>
 	<main>
-		<div class = "contact-us-page">
-			<img class="location-shop" src="Graphics/location.png" alt="location of shop">
-			<h2 class="hero-header">Contact Us</h2>
-			<p>Ready to get started on your next fencing project? We're here to help! Whether you have questions about our services, need a free estimate, or want to schedule a consultation, don’t hesitate to reach out.</p>
-			<br>
-				<i id = "location-pin" class="fa-solid fa-map-pin"></i>
-				<p>913 Woodbine Ave, Bensalem, PA 19020</p>
-				<br>
-				<i id="phone-contact" class="fa-solid fa-phone"></i>
-				<p>215-510-6434</p>
-				<br>
-				<i id="mail-contact" class="fa-solid fa-envelope"></i>
-				<p>fenceestimates@comcast.net</p>
+		<div class = "form">
+				<form action="https://formspree.io/f/mqakojrj" method="POST" class="contact-form">
+				  <h2>Contact Us</h2>
+				  
+				  <label for="name">Name:</label>
+				  <input type="text" id="name" name="name" placeholder="Your Name" required>
+				  
+				  <label for="phone">Phone Number:</label>
+				  <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+				  
+				  <label for="message">Message:</label>
+				  <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+				  
+				  <button type="submit">Send Message</button>
+				</form>
 		</div>
-
-		<div class="hoo">
-			<h2 class="hero-header">Hours of Operation</h2>
-		    <p class = "hoo-text">We are available to serve you during the following hours:</p>
-		    <p><b>Monday - Saturday: </b>7:00 AM - 7:00 PM </p>
-		    <p class="hoo-sunday"><b>Sunday: </b>Closed</p>
-		    <p>Emergency Service is available upon request for urgent fencing needs. Contact us for prompt assistance.</p>
-		</div>	
-	
 	</main>
 
 

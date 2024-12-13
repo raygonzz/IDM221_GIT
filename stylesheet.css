@@ -6,19 +6,20 @@
 }
 
 @font-face {
-	font-family: 'Narnoor';
-	src: url(fonts/Narnoor/Narnoor-Regular.ttf) format('truetype');
+	font-family: 'Lexend';
+	src: url(fonts/Lexend/static/Lexend-Medium.ttf) format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 html {
 	--primary: #d63031;
-	--secondary: #2d3436;
-	--background: ghostwhite;
+	--secondary: #3D3D3D;
+	--background: white;
+	--boxes: #EAEAEA;
 	--font-sans-serif: 'Archivo', 'Arial', 'Helvetica', 'Verdana', 'Tahoma',
     'Trebuchet Ms', 'Gill Sans', 'Calibri', 'Futura', 'Century Gothic', 'Open Sans', 'Roboto', sans-serif;
-    --font-serif: 'Narnoor', 'Georgia', 'Times New Roman', 'Garamond', 'Baskerville', 'Palatino', 'Cambria', serif;
+    --font-serif: 'Lexend', 'Georgia', 'Times New Roman', 'Garamond', 'Baskerville', 'Palatino', 'Cambria', serif;
     --font-bold: 'Archivo';
     background: var(--background);
     --border-color: var(--secondary);
@@ -27,24 +28,33 @@ html {
     height: 100%;
 }
 
+a {
+	text-decoration: none;
+}
+
 div.header {
 	position: relative;
 	top: 0;
 	display: flex;
 	padding: 8px;
 	font-family: var(--font-serif);
-	background: #4b4b4b; 
+	background: #3D3D3D; 
 	height: 1.5rem;
 	color: var(--background);
+	border-bottom: 2px solid black;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.50);
+	z-index: 30;
 }
 
 header.main-header {
 	background: var(--primary);
 	color: var(--background);
-	border-bottom: 2px solid var(--secondary);
+	border-bottom: 2px solid black;
 	height: 3rem;
 	position: sticky;
 	top: 0;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.50);
+	z-index: 30;
 }
 
 span.main-title {
@@ -66,7 +76,7 @@ span.footer-title, span.footer-address, div.phone-number, div.email {
 	display: block;
 	text-align: center;
 	font-size: 0.7rem;
-	font-family: var(--font-sans-serif;)
+	font-family: var(--font-sans-serif);
 }
 
 div.phone-number {
@@ -101,16 +111,267 @@ h3 {
 	font-family: var(--font-sans-serif);
 	font-size: 20px;
 	text-align: center;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+}
+
+
+#sae {
+  align-items: center;
+  background-color: var(--boxes);
+  border: 2px solid;
+  border-color: var(--black);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem auto;
+  min-height: 188px;
+  padding: 7px 11px;
+  width: 311px;
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.50);
+}
+
+
+#sae h2.hero-header {
+  margin-top: 0.5rem;
+}
+
+#sae p {
+  margin-top: 10px !important;
+  text-align: center !important;
+  padding-right: 5rem !important;
+  width: 19.7rem;
+}
+
+.second-section {
+  align-items: center;
+  background-color: var(--boxes);
+  border: 2px solid;
+  border-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin: auto;
+  min-height: 188px;
+  width: 27rem;
+  padding-bottom: 0.5rem;
+}
+
+div.contact-us-page {
+  align-items: center;
+  background-color: var(--boxes);
+  border: 2px solid;
+  border-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: 200px;
+  width: 27rem;
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
+  height: 38rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+div.about-us, div.vinyl-fencing, div.aluminum-fencing, div.chainlink-fencing, div.wood-fencing {
+  align-items: center;
+  background-color: var(--boxes);
+  border: 2px solid;
+  border-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: 200px;
+  width: 27rem;
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
+  height: 22rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+div.contact-us-page {
+	margin-top: 3rem;
+}
+
+div.chainlink-fencing {
+	margin-top: 3rem;
+}
+
+div.vinyl-fencing {
+	margin-top: -2rem;
+}
+
+div.aluminum-fencing, div.vinyl-fencing, div.chainlink-fencing, div.wood-fencing {
+	height: 16rem;
+}
+
+div.aluminum-fencing {
+	margin-top: 3rem;
+}
+
+img.vinyl-photo + * {
+	font-size: 20px;
+	margin-top: 8px;
+}
+
+img.chainlink-photo + * {
+	font-size: 20px;
+}
+
+img.wood-photo + * {
+	font-size: 20px;
+}
+
+
+img.vinyl-photo {
 	margin-bottom: 0;
-	margin-top: 16px;
+}
+
+div.wood-fencing {
+	margin-top: 3rem;
+}
+
+img.aluminum-photo, img.chainlink-photo, img.wood-photo, img.location-shop {
+	margin-top: -7rem;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.50);
+}
+
+img.aluminum-photo + * {
+	font-size: 20px;
+}
+
+.div-faqs {
+  align-items: center;
+  background-color: var(--boxes);
+  border: 2px solid;
+  border-color: var(--black);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem auto;
+  min-height: 188px;
+  padding: 7px 11px;
+  width: 24rem;
+  margin-bottom: 6rem;
+  margin-top: 2.5rem;
+}
+
+h2.hero-header {
+	margin-top: 0.5rem;
+}
+
+.fencing-options-header {
+  align-items: center;
+  background-color: var(--boxes);
+  border: 2px solid;
+  border-color: var(--black);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem auto;
+  min-height: 188px;
+  padding: 7px 11px;
+  width: 24rem;
+  margin-bottom: 6rem;
+  margin-top: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.50);
+}
+
+div.hoo {
+  align-items: center;
+  background-color: var(--boxes);
+  border: 2px solid;
+  border-color: var(--black);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem auto;
+  min-height: 188px;
+  padding: 7px 11px;
+  width: 24rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.50);
+}
+
+
+.div-our-story, .reviews {
+  align-items: center;
+  background-color: var(--boxes);
+  border: 2px solid;
+  border-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: 200px;
+  width: 27rem;
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
+  height: 22rem;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem;
+}
+
+div.fencing-ending {
+  align-items: center;
+  background-color: var(--boxes);
+  border: 2px solid;
+  border-color: var(--black);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.6rem auto;
+  min-height: 188px;
+  padding: 7px 11px;
+  width: 24rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.50);
+}
+
+div.reviews {
+	height: 57rem;
+}
+
+#reviews {
+	margin-top: -3.5rem;
+}
+
+#reviews + * {
+	text-align: center;
+}
+
+img.review-photo-1 + * {
+	margin-bottom: 1.5rem;
 }
 
 p {
 	font-family: var(--font-serif);
-	text-align: center;
+	text-align: left;
 	max-width: 85vh;
-	margin: 0.6rem auto;
+	margin: 0.2rem auto;
+	margin-bottom: 0.5rem;
+	line-height: 1.3rem;
 	width: 24rem;
+}
+
+#about-us {
+	margin-top: 0rem;
+}
+
+#about-us-photo, #our-story-photo, img.vinyl-photo {
+	position: relative;
+	margin-top: -7.5rem;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.50);
+	z-index: 20;
+}
+
+#about-us-photo {
+	margin-bottom: 1rem;
 }
 
 .menu-icon {
@@ -130,6 +391,7 @@ nav {
   top: 0;
   z-index: 1000;
   transition: right 0.3s ease;
+  border-left: 2px solid black;
 }
 
   nav ul {
@@ -158,15 +420,21 @@ nav ul li a:hover {
 }
 
 img {	
-
-	border: 2px solid #2d3436 !important;
-	border-radius:  5px;
+	border: 2px solid black !important;
 	display: block;
 	margin: 8px auto;
 }
 
+img.Hero-Photo {
+	margin-bottom: 2rem;
+}
+
+img.family-photo {
+	margin-top: 1rem;
+}
+
 img.Hero-Photo, img.review-photo-1, img.review-photo-2, img.vinyl-photo, 
-img.aluminum-photo, img.chainlink-photo, img.wood-photo, img.grey-fence {
+img.aluminum-photo, img.chainlink-photo, img.wood-photo, img.location-shop {
 	max-width: 85vh;
 	width: 24rem;
 	max-height: 16rem;
@@ -197,13 +465,12 @@ button.Quote {
 	font-size: 1rem;
 	padding: 5px 15px;
 	display: flex;
-	margin-left: 8.5rem;
-	margin-bottom: 1rem;
-	margin-top: 0;
 	font-family: var(--font-sans-serif);
 	height: 40px;
 	line-height: 32px;
+	margin-top: 0.5rem;
 }
+
 
 button.Quote:hover {
 	background: #1e272e;
@@ -216,9 +483,8 @@ main {
 footer.main-footer {
 	background: var(--primary);
 	color: var(--background);
-	border-top: 2px solid var(--secondary);
-	margin-top: 2rem;
-	flex: 1;
+	border-top: 0.1px solid black;
+	margin-top: 0rem;
 	height: 10rem;
 	z-index: 900;
 }
@@ -259,6 +525,7 @@ h2 ~ p {
     text-align: center;
     font-family: var(--font-serif);
     font-size: 1rem;
+    z-index: 10;
 }
 
 .slides {
@@ -266,6 +533,7 @@ h2 ~ p {
     display: flex;
     flex-direction: column;
     animation: slide 15s infinite;
+    z-index: 20;
 }
 
 .slide {
@@ -276,6 +544,7 @@ h2 ~ p {
     justify-content: center;
     flex-shrink: 0;
     flex-direction: column;
+    z-index: 20;
 }
 
 .title {
@@ -302,14 +571,6 @@ div.FAQs {
 	text-align: center;
 }
 
-div.reviews {
-	margin:  0 auto;
-	display: block;
-	height: 52rem;
-	width: 25rem;
-	border-radius: 10px;
-}
-
 div#reviews {
 	font-family: var(--font-sans-serif);
 	text-align: center;
@@ -329,6 +590,7 @@ ul.locations li {
 	display: block;
 	text-align: center;
 	margin:  0 0;
+	margin-bottom: 1rem;
 }
 
 div.fencing-options {
@@ -340,9 +602,88 @@ div.fencing-options p {
 	margin-top: 0;
 }
 
-#location-pin {
-	display: inline-block !important;
-	margin-left: 3rem !important;
-	font-size: 3rem;
-	margin-top: 2rem;
+#location-pin, #phone-contact, #mail-contact {
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+#location-pin ~ p {
+	text-align: center;
+}
+
+h3.service-areas {
+	margin-top: -1rem;
+}
+
+p.hoo-text, p.hoo-text + * {
+	text-align: center;
+}
+
+p.hoo-sunday {
+	text-align: center;
+}
+
+.contact-form {
+  background: var(--background);
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  padding: 20px 30px;
+  width: 23rem;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 14rem;
+  margin-top: 2rem;
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+  color: var(--secondary);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: black;
+  outline: none;
+}
+
+.contact-form button {
+  background: black;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background: var(--secondary);
+}
+
+input#phone {
+	margin: 0;
+	margin-bottom: 1rem;
 }
